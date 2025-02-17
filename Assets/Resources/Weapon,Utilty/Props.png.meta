@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89e3c27c6bfaf9b439a3459e0384f338
+guid: 601a404f03d254946a82e87f75104dcf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC2_1
+      name: Melee
       rect:
         serializedVersion: 2
-        x: 2
-        y: 21
-        width: 14
-        height: 20
+        x: 0
+        y: 44
+        width: 18
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1812145bd0ffe4b83daff687a3a379
-      internalID: -407838550
+      spriteID: ba7c7f93550b24443b1587abf95e7189
+      internalID: 2142961042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2_2
+      name: Gun
       rect:
         serializedVersion: 2
-        x: 21
-        y: 21
-        width: 14
-        height: 19
+        x: 0
+        y: 34
+        width: 18
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ba99b1f19a9bcc4cb1e414784f649fc
-      internalID: 2078489886
+      spriteID: cf6626ee2dfa90245a831d3f698dbf8c
+      internalID: -646266927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2_3
+      name: Props_9
       rect:
         serializedVersion: 2
-        x: 40
-        y: 21
-        width: 14
-        height: 19
+        x: 26
+        y: 23
+        width: 4
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8489002b5503ec04cbc5377816454199
-      internalID: -780283328
+      spriteID: 65e2fcf7cd8ecca40a5559023e98cb69
+      internalID: 1690141457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2_4
+      name: Shadow
       rect:
         serializedVersion: 2
-        x: 2
+        x: 37
+        y: 25
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3146a24f20ded1499ff71a50fba8068
+      internalID: 295310977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 12
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2778863d7df1fd74ab7c807dc0b8f53d
+      internalID: -1252460053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kit
+      rect:
+        serializedVersion: 2
+        x: 46
         y: 0
-        width: 14
-        height: 19
+        width: 10
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328abbc6110240b418ea0081d4edc4de
-      internalID: 1082549406
+      spriteID: d2c4344974b61d842a12d42464901e47
+      internalID: 635572674
       vertices: []
       indices: 
       edges: []
@@ -230,14 +272,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NPC2_0: -715560067
-      NPC2_1: -407838550
-      NPC2_10: -642743542
-      NPC2_11: -1782404594
-      NPC2_2: 2078489886
-      NPC2_3: -780283328
-      NPC2_4: 1082549406
-      NPC2_5: 1547309527
+      Gun: -646266927
+      M: 1365633528
+      Melee: 2142961042
+      Props_1: 181792442
+      Props_10: 1176555193
+      Props_12: 2050419104
+      Props_14: 1586448769
+      Props_15: -69377942
+      Props_16: -1039624641
+      Props_17: -1961037724
+      Props_2: 2046369630
+      Props_4: 1866186562
+      Props_5: 82176701
+      Props_7: 1648165777
+      Props_8: 1694831459
+      Props_9: 1690141457
+      Shadow: 295310977
+      Treasure: -1252460053
+      kit: 635572674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

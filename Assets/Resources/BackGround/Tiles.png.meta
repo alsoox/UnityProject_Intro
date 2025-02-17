@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89e3c27c6bfaf9b439a3459e0384f338
+guid: 1de92f29b16769745a756904f2db2257
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC2_1
+      name: Tiles_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 21
-        width: 14
-        height: 20
+        x: 0
+        y: 19
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1812145bd0ffe4b83daff687a3a379
-      internalID: -407838550
+      spriteID: 624d308053903bc42b5a88823234e351
+      internalID: 99076074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2_2
+      name: Tiles_1
       rect:
         serializedVersion: 2
-        x: 21
-        y: 21
-        width: 14
-        height: 19
+        x: 19
+        y: 19
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ba99b1f19a9bcc4cb1e414784f649fc
-      internalID: 2078489886
+      spriteID: ae656c25709628846af04b9b087fafa8
+      internalID: -1081928741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2_3
+      name: Tiles_2
       rect:
         serializedVersion: 2
-        x: 40
-        y: 21
-        width: 14
-        height: 19
+        x: 38
+        y: 19
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8489002b5503ec04cbc5377816454199
-      internalID: -780283328
+      spriteID: 4ebab0d19ac5555499c6e0b290ad6919
+      internalID: 553583625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2_4
+      name: Tiles_3
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 14
-        height: 19
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +213,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328abbc6110240b418ea0081d4edc4de
-      internalID: 1082549406
+      spriteID: b43b778e349e0394f864f20455ab926b
+      internalID: 1410655522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51918ae3e52c1a547ae6c95263950313
+      internalID: 243462498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ff293f1232eef468ca56c2c889aaac
+      internalID: -1649853916
       vertices: []
       indices: 
       edges: []
@@ -230,14 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NPC2_0: -715560067
-      NPC2_1: -407838550
-      NPC2_10: -642743542
-      NPC2_11: -1782404594
-      NPC2_2: 2078489886
-      NPC2_3: -780283328
-      NPC2_4: 1082549406
-      NPC2_5: 1547309527
+      Tiles_0: 99076074
+      Tiles_1: -1081928741
+      Tiles_2: 553583625
+      Tiles_3: 1410655522
+      Tiles_4: 243462498
+      Tiles_5: -1649853916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
