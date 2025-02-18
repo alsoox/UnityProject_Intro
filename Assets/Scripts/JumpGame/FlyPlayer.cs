@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FlyPlayer : MonoBehaviour
@@ -27,16 +28,20 @@ public class FlyPlayer : MonoBehaviour
 
         if (rigidbody == null)
             Debug.Log("Not Founded Rigidbody2D");
+
+        rigidbody.gravityScale = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!jumpGameManager.isGameStarted) return;
+
         if (isDead)
         {
             if (deathCooldown <= 0)
             {
-                jumpGameManager.RestartGame();
+                jumpGameManager.Dead();
             }
             else
             {
@@ -54,7 +59,9 @@ public class FlyPlayer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isDead) return;
+        if (!jumpGameManager.isGameStarted || isDead) return;
+
+        rigidbody.gravityScale = 1f;
 
         Vector3 velocity = rigidbody.velocity;
         velocity.x = fowardSpeed;
@@ -78,7 +85,6 @@ public class FlyPlayer : MonoBehaviour
 
         isDead = true;
         deathCooldown = 1f;
-
         animator.SetInteger("IsDead", 1);
     }
 }

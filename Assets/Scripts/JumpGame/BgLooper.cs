@@ -41,7 +41,5 @@ public class BgLooper : MonoBehaviour
         {
             obstacleLastPosition = obstacle.SetRandomPlace(obstacleLastPosition, obstacleCount);
         }
-
-
     }
 }

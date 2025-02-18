@@ -10,7 +10,9 @@ public class JumpGameManager : MonoBehaviour
 
     public static JumpGameManager Instance { get { return jumpGameManager; } }
 
+
     private int currentScore = 0;
+    public bool isGameStarted = false;
 
     private void Awake()
     {
@@ -18,19 +20,27 @@ public class JumpGameManager : MonoBehaviour
         jumpUIManager = FindObjectOfType<JumpUIManager>();
     }
 
-    private void Start()
+    private void Update()
     {
+        if (!isGameStarted) return;
+    }
+
+    public void StartGame()
+    {
+        isGameStarted = true;
         jumpUIManager.UpdateScore(0);
     }
 
     public void GameOver()
     {
         Debug.Log("GameOver");
+
     }
 
-    public void RestartGame()
+    public void Dead()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        isGameStarted = false;
+        jumpUIManager.ReStartGame();
     }
 
     public void AddScore(int score)
