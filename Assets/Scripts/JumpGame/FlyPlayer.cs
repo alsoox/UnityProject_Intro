@@ -41,7 +41,7 @@ public class FlyPlayer : MonoBehaviour
         {
             if (deathCooldown <= 0)
             {
-                jumpGameManager.Dead();
+                jumpGameManager.GameOver();
             }
             else
             {

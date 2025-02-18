@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +12,7 @@ public class JumpGameManager : MonoBehaviour
 
     public static JumpGameManager Instance { get { return jumpGameManager; } }
 
-
+    private int bestScore = 0;
     private int currentScore = 0;
     public bool isGameStarted = false;
 
@@ -18,6 +20,8 @@ public class JumpGameManager : MonoBehaviour
     {
         jumpGameManager = this;
         jumpUIManager = FindObjectOfType<JumpUIManager>();
+
+        bestScore = PlayerPrefs.GetInt("BestScore", 0);
     }
 
     private void Update()
@@ -31,15 +35,12 @@ public class JumpGameManager : MonoBehaviour
         jumpUIManager.UpdateScore(0);
     }
 
+
     public void GameOver()
     {
-        Debug.Log("GameOver");
-
-    }
-
-    public void Dead()
-    {
         isGameStarted = false;
+        UpdateBestScore();
+        jumpUIManager.SetScore(currentScore, bestScore);
         jumpUIManager.ReStartGame();
     }
 
@@ -48,5 +49,15 @@ public class JumpGameManager : MonoBehaviour
         currentScore += score;
         Debug.Log("현재점수: " + currentScore);
         jumpUIManager.UpdateScore(currentScore);
+    }
+
+    private void UpdateBestScore()
+    {
+        if (bestScore < currentScore)
+        {
+            bestScore = currentScore;
+            PlayerPrefs.SetInt("BestScore", bestScore);
+            PlayerPrefs.Save();
+        }
     }
 }
