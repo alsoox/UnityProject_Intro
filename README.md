@@ -6,11 +6,16 @@
 
 1. 캐릭터 이동 및 맵 탐색  / 카메라 추적기능  
 
-![image](/README/intro.gif)  
+![image](/README/move.gif)  
 
-2. 맵 설계 및 상호작용 영역
+2. 맵 설계 및 상호작용 영역  
+
+![image](/README/npc.gif)  
 
 3. 미니 게임 실행  
 
+![image](/README/minigame.gif)
+
 4. 점수 시스템 / 게임 종료 및 복귀  
 
+![image](/README/score.gif)
