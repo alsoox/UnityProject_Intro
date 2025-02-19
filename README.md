@@ -6,7 +6,7 @@
 
 1. 캐릭터 이동 및 맵 탐색  / 카메라 추적기능  
 
-![image](/README/tilemap.png)  
+![image](/README/intro.gif)  
 
 2. 맵 설계 및 상호작용 영역
 
